@@ -18,13 +18,23 @@ class HomePage extends StatelessWidget {
                   return AlertDialog(
                     title: Text('Logout This page'),
                     actions: [
-                      ElevatedButton(onPressed: () {
-                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPage(),));
-                      }, child: Text('Log out')),
                       ElevatedButton(
                           onPressed: () {
-                            Navigator.pop(context);
-                          }, child: const Text('cancle'))
+                            Navigator.pushAndRemoveUntil(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => LoginPage(),
+                              ),
+                              (route) => false,
+                            );
+                          },
+                          child: Text('Log out')),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Text('cancle'),
+                      )
                     ],
                   );
                 },

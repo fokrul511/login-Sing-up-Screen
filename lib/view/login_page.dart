@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_registion/view/home.dart';
 import 'package:login_registion/view/registion_page.dart';
-import 'package:login_registion/widget/widget.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -62,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                     autofocus: false,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.grey.shade300,
+                      fillColor: Color(0xfff0e4f2),
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -92,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                     autofocus: false,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.grey.shade300,
+                      fillColor: Color(0xfff0e4f2),
                       border: OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -145,7 +144,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   SizedBox(
-                    height: 120,
+                    height: 80,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

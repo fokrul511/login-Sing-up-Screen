@@ -13,8 +13,10 @@ class _RegistionPageState extends State<RegistionPage> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _passwordConfromController = TextEditingController();
+  final TextEditingController _passwordConfromController =
+      TextEditingController();
   final GlobalKey<FormState> _globalKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -62,7 +64,7 @@ class _RegistionPageState extends State<RegistionPage> {
                     autofocus: false,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.grey.shade300,
+                      fillColor: Color(0xfff0e4f2),
                       border: const OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -89,11 +91,10 @@ class _RegistionPageState extends State<RegistionPage> {
                       return null;
                     },
                     keyboardType: TextInputType.emailAddress,
-
                     autofocus: false,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.grey.shade300,
+                      fillColor: Color(0xfff0e4f2),
                       border: const OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -121,11 +122,10 @@ class _RegistionPageState extends State<RegistionPage> {
                       return null;
                     },
                     keyboardType: TextInputType.text,
-
                     autofocus: false,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.grey.shade300,
+                      fillColor: Color(0xfff0e4f2),
                       border: const OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -155,7 +155,7 @@ class _RegistionPageState extends State<RegistionPage> {
                     autofocus: false,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.grey.shade300,
+                      fillColor: Color(0xfff0e4f2),
                       border: const OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -184,8 +184,12 @@ class _RegistionPageState extends State<RegistionPage> {
                         backgroundColor: Colors.purple,
                       ),
                       onPressed: () {
-                        if(_globalKey.currentState!.validate()){
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage(),));
+                        if (_globalKey.currentState!.validate()) {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HomePage(),
+                              ));
                         }
                       },
                       child: const Text(
