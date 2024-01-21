@@ -3,7 +3,10 @@
 A new Flutter project.
 
 ## Getting Started
-
+## Example Login screen
+![login screen](https://github.com/fokrul511/login-Sing-up-Screen/blob/main/lib/privew_image/login%20page.png)
+## Example Login screen
+![Sing Up](https://github.com/fokrul511/login-Sing-up-Screen/blob/main/lib/privew_image/sing%20up%20page.png)
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
